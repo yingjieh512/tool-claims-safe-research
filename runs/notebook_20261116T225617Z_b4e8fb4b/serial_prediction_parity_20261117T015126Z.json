@@ -1,0 +1,24 @@
+{
+  "purpose": "Service-threading recovery diagnostics, excluded from benchmark metrics",
+  "checks": [
+    {
+      "id": "1",
+      "exact_match": true,
+      "original_probability": 0.01344319712370634,
+      "serial_probability": 0.01344319712370634,
+      "original_prediction": 0,
+      "serial_prediction": 0,
+      "prompt_tokens": 1339
+    },
+    {
+      "id": "365",
+      "exact_match": true,
+      "original_probability": 0.1685606986284256,
+      "serial_probability": 0.1685606986284256,
+      "original_prediction": 0,
+      "serial_prediction": 0,
+      "prompt_tokens": 3724
+    }
+  ],
+  "all_exact": true
+}

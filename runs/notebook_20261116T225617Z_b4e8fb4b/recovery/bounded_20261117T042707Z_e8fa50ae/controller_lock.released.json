@@ -1,0 +1,11 @@
+{
+  "token": "bd5681f9906b46fc900bff9a88e3ba1c",
+  "created_utc": "2026-11-17T04:27:06.431650+00:00",
+  "identity": {
+    "pid": 17464,
+    "creation_filetime": 134393632218488608,
+    "image_path": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\python3.9.exe",
+    "alive": true
+  },
+  "driver_sha256": "3574a63cf94569b2486fb4c36cd65949dbd6ae3ccfedcc7cebf215e933dccd7b"
+}

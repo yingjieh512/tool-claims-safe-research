@@ -1,0 +1,28 @@
+{
+  "config": {
+    "experiment": "full1000",
+    "model": "jev-1.14.0",
+    "requested_model": "jev-1.14.0",
+    "endpoint": "https://api.typesafe.ai/v1/systemone",
+    "question_sha256": "bdcad83d68674767674388027b5ac045af67dd00bdcb515aaee84c1f233f4df4",
+    "threshold": 0.5,
+    "order_seed": null,
+    "states_sha256": "d0e01a64bd08ca926b1cee7f048766c46c3e23fedc5c0e661758c6e634feb909",
+    "timeout": 120,
+    "max_attempts": 5,
+    "rate": 2.0
+  },
+  "n_total": 1000,
+  "n_scored": 1000,
+  "n_errors": 0,
+  "n_pending": 0,
+  "tp": 239,
+  "tn": 408,
+  "fp": 95,
+  "fn": 258,
+  "accuracy": 0.647,
+  "precision_unsafe": 0.7155688622754491,
+  "recall_unsafe": 0.48088531187122735,
+  "f1_unsafe": 0.5752105896510229,
+  "error_types": {}
+}

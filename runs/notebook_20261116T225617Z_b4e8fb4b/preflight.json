@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-11-16T22:56:14.735307+00:00",
+  "purpose": "API/model availability diagnostics; excluded from benchmark metrics",
+  "models": [
+    {
+      "model": "jev-1.13.0",
+      "status": "ready",
+      "input_tokens": 1669,
+      "output_tokens": 20
+    },
+    {
+      "model": "jev-1.14.0",
+      "status": "ready",
+      "input_tokens": 1669,
+      "output_tokens": 20
+    }
+  ]
+}

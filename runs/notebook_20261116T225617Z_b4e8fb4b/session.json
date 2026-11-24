@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "session_id": "notebook_20261116T225617Z_b4e8fb4b",
+  "created_utc": "2026-11-16T22:56:17.606096+00:00",
+  "status": "finished_with_process_errors",
+  "cohort": "fixed historical 90-parent selection",
+  "guard_endpoint": "http://127.0.0.1:29660/predict",
+  "tasks": [
+    {
+      "experiment": "full1000",
+      "model": "guard",
+      "status": "process_failed",
+      "started_utc": "2026-11-16T22:57:28.899913+00:00",
+      "returncode": 1,
+      "stopped_after_repeated_errors": true,
+      "elapsed_seconds": 10021.58,
+      "output": "runs/notebook_20261116T225617Z_b4e8fb4b/full1000/guard",
+      "finished_utc": "2026-11-17T01:44:30.681499+00:00"
+    },
+    {
+      "experiment": "full1000",
+      "model": "jev-1.13.0",
+      "status": "finished",
+      "started_utc": "2026-11-17T01:44:30.704256+00:00",
+      "returncode": 0,
+      "stopped_after_repeated_errors": false,
+      "elapsed_seconds": 559.11,
+      "output": "runs/notebook_20261116T225617Z_b4e8fb4b/full1000/jev-1.13.0",
+      "finished_utc": "2026-11-17T01:53:49.866931+00:00"
+    },
+    {
+      "experiment": "full1000",
+      "model": "jev-1.14.0",
+      "status": "finished",
+      "started_utc": "2026-11-17T01:53:49.895673+00:00",
+      "returncode": 0,
+      "stopped_after_repeated_errors": false,
+      "elapsed_seconds": 636.38,
+      "output": "runs/notebook_20261116T225617Z_b4e8fb4b/full1000/jev-1.14.0",
+      "finished_utc": "2026-11-17T02:04:26.447177+00:00"
+    },
+    {
+      "experiment": "paired90",
+      "model": "guard",
+      "status": "finished",
+      "started_utc": "2026-11-17T02:04:26.447177+00:00",
+      "returncode": 0,
+      "stopped_after_repeated_errors": false,
+      "elapsed_seconds": 8428.09,
+      "output": "runs/notebook_20261116T225617Z_b4e8fb4b/paired90/guard",
+      "finished_utc": "2026-11-17T04:24:54.554205+00:00"
+    },
+    {
+      "experiment": "paired90",
+      "model": "jev-1.13.0",
+      "status": "finished",
+      "started_utc": "2026-11-17T04:24:54.569559+00:00",
+      "returncode": 0,
+      "stopped_after_repeated_errors": false,
+      "elapsed_seconds": 139.0,
+      "output": "runs/notebook_20261116T225617Z_b4e8fb4b/paired90/jev-1.13.0",
+      "finished_utc": "2026-11-17T04:27:13.589068+00:00"
+    },
+    {
+      "experiment": "paired90",
+      "model": "jev-1.14.0",
+      "status": "finished",
+      "started_utc": "2026-11-17T04:27:13.589068+00:00",
+      "returncode": 0,
+      "stopped_after_repeated_errors": false,
+      "elapsed_seconds": 153.58,
+      "output": "runs/notebook_20261116T225617Z_b4e8fb4b/paired90/jev-1.14.0",
+      "finished_utc": "2026-11-17T04:29:47.189823+00:00"
+    }
+  ],
+  "inputs_sha256": {
+    "full1000": "d0e01a64bd08ca926b1cee7f048766c46c3e23fedc5c0e661758c6e634feb909",
+    "paired90": "c4fb45e9a8310ea3d7da071c767256f334de698d7d5c8845136453a30e61b79b"
+  },
+  "guard_health": {
+    "status": "ready",
+    "model": "jev-v3.2-2b",
+    "context_limit": 16384,
+    "text_only": true,
+    "truncation": false
+  },
+  "guard_started_by_notebook": true,
+  "finished_utc": "2026-11-17T04:29:47.189823+00:00"
+}

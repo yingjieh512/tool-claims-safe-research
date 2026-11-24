@@ -1,0 +1,165 @@
+{
+  "status": "passed",
+  "new_model_calls": 0,
+  "response_parser_matches": 810,
+  "dry_run_configurations": [
+    {
+      "experiment": "full1000",
+      "model": "guard",
+      "requested_model": "jev-v3.2-2b",
+      "endpoint": "http://127.0.0.1:29660/predict",
+      "question_sha256": null,
+      "threshold": null,
+      "order_seed": null,
+      "states_sha256": "d0e01a64bd08ca926b1cee7f048766c46c3e23fedc5c0e661758c6e634feb909",
+      "timeout": 1800,
+      "max_attempts": 5,
+      "rate": 2.0,
+      "n_selected": 1000,
+      "n_pending": 1000,
+      "output": "runs/full1000/guard",
+      "dry_run": true
+    },
+    {
+      "experiment": "full1000",
+      "model": "jev-1.13.0",
+      "requested_model": "jev-1.13.0",
+      "endpoint": "https://api.typesafe.ai/v1/systemone",
+      "question_sha256": "bdcad83d68674767674388027b5ac045af67dd00bdcb515aaee84c1f233f4df4",
+      "threshold": 0.5,
+      "order_seed": null,
+      "states_sha256": "d0e01a64bd08ca926b1cee7f048766c46c3e23fedc5c0e661758c6e634feb909",
+      "timeout": 120,
+      "max_attempts": 5,
+      "rate": 2.0,
+      "n_selected": 1000,
+      "n_pending": 1000,
+      "output": "runs/full1000/jev-1.13.0",
+      "dry_run": true
+    },
+    {
+      "experiment": "full1000",
+      "model": "jev-1.14.0",
+      "requested_model": "jev-1.14.0",
+      "endpoint": "https://api.typesafe.ai/v1/systemone",
+      "question_sha256": "bdcad83d68674767674388027b5ac045af67dd00bdcb515aaee84c1f233f4df4",
+      "threshold": 0.5,
+      "order_seed": null,
+      "states_sha256": "d0e01a64bd08ca926b1cee7f048766c46c3e23fedc5c0e661758c6e634feb909",
+      "timeout": 120,
+      "max_attempts": 5,
+      "rate": 2.0,
+      "n_selected": 1000,
+      "n_pending": 1000,
+      "output": "runs/full1000/jev-1.14.0",
+      "dry_run": true
+    },
+    {
+      "experiment": "paired90",
+      "model": "guard",
+      "requested_model": "jev-v3.2-2b",
+      "endpoint": "http://127.0.0.1:29660/predict",
+      "question_sha256": null,
+      "threshold": null,
+      "order_seed": 20261016,
+      "states_sha256": "c4fb45e9a8310ea3d7da071c767256f334de698d7d5c8845136453a30e61b79b",
+      "timeout": 1800,
+      "max_attempts": 5,
+      "rate": 2.0,
+      "n_selected": 270,
+      "n_pending": 270,
+      "output": "runs/paired90/guard",
+      "dry_run": true
+    },
+    {
+      "experiment": "paired90",
+      "model": "jev-1.13.0",
+      "requested_model": "jev-1.13.0",
+      "endpoint": "https://api.typesafe.ai/v1/systemone",
+      "question_sha256": "bdcad83d68674767674388027b5ac045af67dd00bdcb515aaee84c1f233f4df4",
+      "threshold": 0.5,
+      "order_seed": 20261016,
+      "states_sha256": "c4fb45e9a8310ea3d7da071c767256f334de698d7d5c8845136453a30e61b79b",
+      "timeout": 120,
+      "max_attempts": 5,
+      "rate": 2.0,
+      "n_selected": 270,
+      "n_pending": 270,
+      "output": "runs/paired90/jev-1.13.0",
+      "dry_run": true
+    },
+    {
+      "experiment": "paired90",
+      "model": "jev-1.14.0",
+      "requested_model": "jev-1.14.0",
+      "endpoint": "https://api.typesafe.ai/v1/systemone",
+      "question_sha256": "bdcad83d68674767674388027b5ac045af67dd00bdcb515aaee84c1f233f4df4",
+      "threshold": 0.5,
+      "order_seed": 20261016,
+      "states_sha256": "c4fb45e9a8310ea3d7da071c767256f334de698d7d5c8845136453a30e61b79b",
+      "timeout": 120,
+      "max_attempts": 5,
+      "rate": 2.0,
+      "n_selected": 270,
+      "n_pending": 270,
+      "output": "runs/paired90/jev-1.14.0",
+      "dry_run": true
+    }
+  ],
+  "offline_verification": {
+    "status": "passed",
+    "model_calls": 0,
+    "full_test_valid_predictions": 3000,
+    "paired_valid_predictions": 810,
+    "input_reconstruction": {
+      "dataset_rows": 1000,
+      "safe": 503,
+      "unsafe": 497,
+      "common_true_positives": 122,
+      "eligible_untruncated": 94,
+      "selected_parents": 90,
+      "full1000_middle_omitted": 52,
+      "paired90_states": 270,
+      "all_reconstructed_hashes_match": true
+    },
+    "full_test_accuracy": {
+      "guard": 0.566,
+      "jev-1.13.0": 0.663,
+      "jev-1.14.0": 0.644
+    },
+    "paired_false_negatives": {
+      "guard": {
+        "clean": 0,
+        "control": 2,
+        "attack": 50,
+        "net_extra": 48
+      },
+      "jev-1.13.0": {
+        "clean": 1,
+        "control": 2,
+        "attack": 26,
+        "net_extra": 24
+      },
+      "jev-1.14.0": {
+        "clean": 1,
+        "control": 4,
+        "attack": 22,
+        "net_extra": 18
+      }
+    },
+    "archived_summary_and_bootstrap_agreement": true
+  },
+  "code_sha256": {
+    "code/analysis.py": "a12de1101aa2c28fb9b00c0f2da4f6af7619f269bdde3c480056df5fef77ec3c",
+    "code/prepare_inputs.py": "8c451b13611d4bbefd965306091c30b4998251bf2ed0742d9a496c3e2d017f59",
+    "code/rerun.py": "8669846ba122fc9e51d5d41060d315cbc7a579d3126065985e9d9b6c3f81d432",
+    "code/verify_package.py": "cd8ac5091ee69e268a4688f6ab39131fd143eed92beb59030a89360d44a59b6f",
+    "code/guard/fetch_models.py": "08339804b4c212fa662398867ee29014cf1d423eff38f974a19a78c648054bf3",
+    "code/guard/jev_inference.py": "b03d650506926feff6a90e985f9480e0f62a1c18b9514d022fb2c032f3c54b3c",
+    "code/guard/serve.py": "e3e2f70c44f6c14bfbbdbdefbaf4414e0a8d75a770c749901ebbaac25574ca11",
+    "code/trajectory_audit/adversarial.py": "a7ed0b0bc349ea2768540b962e06eb26bc5ab479d53f5c13277e8aa564862af4",
+    "code/trajectory_audit/data.py": "24ddb1d0f14f0e511ffa804242d9ca307792fb9819529ef91aa7d5ee0da4914a",
+    "code/trajectory_audit/views.py": "cf53e9c7ea2f50582ef4d6dc9324773bf03033ec930c6545a156094c1fa4a5bc",
+    "code/trajectory_audit/__init__.py": "884d9704a79a13d2f251c17a6f38591ec49ebe698509a977303d80821090931b"
+  }
+}

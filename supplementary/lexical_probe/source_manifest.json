@@ -1,0 +1,63 @@
+{
+  "source_repository_commit": "19ed817d1923854c5abdda5fe9ae25f7b6124b3b",
+  "source_reference": "local original checkout at packaging time",
+  "historical_oof_archive_found": false,
+  "files": [
+    {
+      "source": "src/trajectory_audit/__init__.py",
+      "destination": "lexical_audit/__init__.py",
+      "source_sha256": "884d9704a79a13d2f251c17a6f38591ec49ebe698509a977303d80821090931b",
+      "destination_sha256": "884d9704a79a13d2f251c17a6f38591ec49ebe698509a977303d80821090931b",
+      "copy_mode": "exact module"
+    },
+    {
+      "source": "src/trajectory_audit/baseline.py",
+      "destination": "lexical_audit/baseline.py",
+      "source_sha256": "a03791d379e8c80a38097580c1d60bff6da1bf92547dcd71907b49f4b6ca95db",
+      "destination_sha256": "a03791d379e8c80a38097580c1d60bff6da1bf92547dcd71907b49f4b6ca95db",
+      "copy_mode": "exact module"
+    },
+    {
+      "source": "src/trajectory_audit/data.py",
+      "destination": "lexical_audit/data.py",
+      "source_sha256": "24ddb1d0f14f0e511ffa804242d9ca307792fb9819529ef91aa7d5ee0da4914a",
+      "destination_sha256": "24ddb1d0f14f0e511ffa804242d9ca307792fb9819529ef91aa7d5ee0da4914a",
+      "copy_mode": "exact module"
+    },
+    {
+      "source": "src/trajectory_audit/grouping.py",
+      "destination": "lexical_audit/grouping.py",
+      "source_sha256": "69cd518bec68beab4ba6fda30038936c1862bfad0c3a6f4c382055ccbfbf18f5",
+      "destination_sha256": "69cd518bec68beab4ba6fda30038936c1862bfad0c3a6f4c382055ccbfbf18f5",
+      "copy_mode": "exact module"
+    },
+    {
+      "source": "src/trajectory_audit/splits.py",
+      "destination": "lexical_audit/splits.py",
+      "source_sha256": "99b737dc269cb37d1f029d1f681faf2cd6d8f037b4d8fb788f5dbac94e58b407",
+      "destination_sha256": "99b737dc269cb37d1f029d1f681faf2cd6d8f037b4d8fb788f5dbac94e58b407",
+      "copy_mode": "exact module"
+    },
+    {
+      "source": "src/trajectory_audit/views.py",
+      "destination": "lexical_audit/views.py",
+      "source_sha256": "cf53e9c7ea2f50582ef4d6dc9324773bf03033ec930c6545a156094c1fa4a5bc",
+      "destination_sha256": "cf53e9c7ea2f50582ef4d6dc9324773bf03033ec930c6545a156094c1fa4a5bc",
+      "copy_mode": "exact module"
+    },
+    {
+      "source": "src/trajectory_audit/reporting.py",
+      "destination": "lexical_audit/reporting.py",
+      "source_sha256": "6c531558b0739a9c2ea14d16773b16628f32d73acc22148df13d280a94ad322f",
+      "destination_sha256": "84a2ee3c92e7de5b71fadb1bcbdb2d0dbfd09f951fef155923bd3fed0660e8c9",
+      "copy_mode": "exact text prefix before def view_length_statistics; unused rendering functions excluded"
+    },
+    {
+      "source": "reports/atbench_mvp_results.md",
+      "destination": "historical_report.md",
+      "source_sha256": "95600fb44cfd360e07db82c481c8c38da29cef4edc3b592e2067073fe322772d",
+      "destination_sha256": "95600fb44cfd360e07db82c481c8c38da29cef4edc3b592e2067073fe322772d",
+      "copy_mode": "exact file"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-16",
+  "reader_facing_language": "English",
+  "changed_files": [
+    "run_and_compare.ipynb",
+    "code/guard/UPSTREAM_MODEL_CARD.md",
+    "code/guard/UPSTREAM_MODEL_CARD.zh-CN.md"
+  ],
+  "remaining_reader_facing_cjk": [],
+  "original_evidence_files_hash_verified": 23,
+  "experimental_text_policy": "Original benchmark text is retained byte-for-byte, including multilingual content, to preserve exact evaluation inputs.",
+  "original_results_overwritten": false
+}

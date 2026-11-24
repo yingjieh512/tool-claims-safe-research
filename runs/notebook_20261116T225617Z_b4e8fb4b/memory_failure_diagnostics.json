@@ -1,0 +1,64 @@
+{
+  "recorded_utc": "2026-11-17T01:47:43.587136+00:00",
+  "scope": "Read-only diagnosis of the first Guard service failure; no new inference performed for this diagnosis.",
+  "confirmed": {
+    "guard_process_id": 10336,
+    "guard_process_created_utc": "2026-11-16T22:56:19.7036560Z",
+    "last_successful_parent_id": "365",
+    "last_success_recorded_utc": "2026-11-17T01:39:32.146513+00:00",
+    "first_failed_parent_id": "366",
+    "first_failed_input_historical_prompt_tokens": 8463,
+    "original_server_log": "guard_server.log",
+    "original_server_log_final_message": "memory allocation of 1064960 bytes failed",
+    "windows_system_event": {
+      "provider": "Microsoft-Windows-Resource-Exhaustion-Detector",
+      "id": 2004,
+      "record_id": 89420,
+      "time_utc": "2026-11-17T01:42:21.1189163Z",
+      "system_commit_limit_bytes": 68445470720,
+      "system_commit_charge_bytes": 68405239808,
+      "guard_process_commit_bytes": 50093645824,
+      "physical_memory_bytes": 16905863168,
+      "physical_memory_usage_bytes": 15426150400
+    },
+    "windows_application_event": {
+      "provider": "Application Error",
+      "id": 1000,
+      "time_utc": "2026-11-17T01:42:25Z",
+      "faulting_process_id": 10336,
+      "faulting_module": "tokenizers.pyd",
+      "exception_code": "0xc0000409"
+    },
+    "pagefile_observed_after_failure": {
+      "automatic_management": true,
+      "allocated_megabytes": 21832,
+      "peak_used_megabytes": 17227
+    },
+    "five_transport_error_records_followed": "366 through 370; failures are not SAFE verdicts"
+  },
+  "diagnosis": {
+    "confirmed_failure_class": "System commit exhaustion coinciding with the Guard process allocation failure.",
+    "not_established": "The exact allocator or library responsible for accumulated memory is not established. The tokenizers.pyd fault identifies the failing allocation site, not necessarily the source of earlier memory growth.",
+    "source_findings": [
+      "Original server creates a new HTTP handler thread for each request and serializes model execution with a lock.",
+      "Inference uses torch.inference_mode(), use_cache=False, and local per-request tensors; no explicit retained list of per-request outputs is present.",
+      "The persistent label_vectors dictionary is not populated for the safety-only requests with an empty options list."
+    ],
+    "hypothesis": "Fresh request threads may retain native/OpenMP/allocator resources, or dynamic-shape backend caches may accumulate. This requires memory observations and is not a proven tokenizer or PyTorch leak."
+  },
+  "additive_mitigation": {
+    "wrapper": "code/guard/serve_serial.py",
+    "change": "Substitute HTTPServer for serve.ThreadingHTTPServer; run the original serve.main().",
+    "unchanged": [
+      "Original serve.py bytes",
+      "Original jev_inference.py bytes",
+      "Checkpoint and tokenizer",
+      "CPU float32 inference",
+      "Four-thread environment",
+      "Frozen prompts and prediction parsing"
+    ],
+    "health_check_caveat": "Single-threaded HTTP serving cannot respond to health checks concurrently with inference.",
+    "validation_so_far": "Wrapper syntax parsed only. Prediction parity and memory behavior must be checked by the active replay.",
+    "fallback": "If memory continues growing, restart only the Guard service between bounded batches while retaining identical model settings and resuming only unscored inputs."
+  }
+}

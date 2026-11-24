@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "handler_checks": [
+    "GET /health status 200",
+    "GET /health status 401",
+    "GET /unknown status 404",
+    "GET /predict status 404",
+    "POST /health status 404",
+    "POST /predict status 401",
+    "POST /predict status 200",
+    "POST /predict status 400",
+    "POST /predict status 400",
+    "POST /predict status 400",
+    "original classifier exception status 400",
+    "original classifier exception status 503"
+  ],
+  "workflow_checks": [
+    "matching_external_runtime_reused_six_jobs_and_exclusive_provenance",
+    "healthy_wrong_runtime_rejected_without_start_stop_or_jobs",
+    "diagnostic_threshold_not_accepted_as_production",
+    "absent_service_starts_bounded_defaults_owned_tree_cleanup_and_provenance",
+    "shared_startup_keeps_serial_entrypoint",
+    "hooks_and_lock_restored_after_exception_and_interrupt",
+    "shared_serial_bounded_single_workflow_lock"
+  ],
+  "real_model_loads": 0,
+  "real_network_or_api_calls": 0,
+  "real_process_starts_or_stops": 0
+}

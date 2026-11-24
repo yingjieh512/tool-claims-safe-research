@@ -1,0 +1,10 @@
+{
+  "status": "preserved_by_rename",
+  "original": "${ORIGINAL_COMMITTEE_PACKAGE}\\runs\\notebook_20261116T225617Z_b4e8fb4b\\full1000\\guard\\.replay.lock",
+  "preserved": "${ORIGINAL_COMMITTEE_PACKAGE}\\runs\\notebook_20261116T225617Z_b4e8fb4b\\full1000\\guard\\stale.replay.lock.bounded_20261117T042707Z_e8fa50ae",
+  "pid": 34548,
+  "owner_confirmed_dead": true,
+  "sha256": "9e9dcfb765d1ae5eff965e8c6921676faf7044eee3a0eba381b73fddea2f5d2e",
+  "record_scope": "Historical experiment record with author-local filesystem paths normalized for publication. Recorded source/artifact digests and original execution timestamps describe the original pre-normalization artifacts; they are not claimed as digests of these published metadata or re-rendered report files. Predictions, inputs, model settings, and numeric results are unchanged. Current published hashes are recorded in provenance/repository_copy_manifest.json and provenance/research_export_validation.json.",
+  "source_artifact_sha256": "4050557020bdaaa83493cd25a282dabdf1b40d9672fdbc8eba6df77769b60a27"
+}

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "C:\\Users\\Yingjie Huang\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\python.exe",
+    "-B",
+    "-u",
+    "${ORIGINAL_COMMITTEE_PACKAGE}\\code\\rerun.py",
+    "--experiment",
+    "full1000",
+    "--model",
+    "guard",
+    "--endpoint",
+    "http://127.0.0.1:29660/predict",
+    "--output-dir",
+    "${ORIGINAL_COMMITTEE_PACKAGE}\\runs\\notebook_20261116T225617Z_b4e8fb4b\\full1000\\guard"
+  ],
+  "created_utc": "2026-11-17T04:31:41.871065+00:00",
+  "expected_pending": 634,
+  "record_scope": "Historical experiment record with author-local filesystem paths normalized for publication. Recorded source/artifact digests and original execution timestamps describe the original pre-normalization artifacts; they are not claimed as digests of these published metadata or re-rendered report files. Predictions, inputs, model settings, and numeric results are unchanged. Current published hashes are recorded in provenance/repository_copy_manifest.json and provenance/research_export_validation.json.",
+  "source_artifact_sha256": "0fc5fa9e6c41e752608a190197fc84986f3e23ad51f1849a1937a179a866d30a"
+}

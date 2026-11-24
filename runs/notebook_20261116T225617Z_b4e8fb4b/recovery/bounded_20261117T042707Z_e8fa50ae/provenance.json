@@ -1,0 +1,78 @@
+{
+  "created_utc": "2026-11-17T04:27:07.097981+00:00",
+  "driver_sha256": "3574a63cf94569b2486fb4c36cd65949dbd6ae3ccfedcc7cebf215e933dccd7b",
+  "session": "${ORIGINAL_COMMITTEE_PACKAGE}\\runs\\notebook_20261116T225617Z_b4e8fb4b",
+  "prediction_prefix": {
+    "bytes": 393844,
+    "rows": 371,
+    "sha256": "20c8835bf50adb662fade2426c02f401a0a28fc62458b0df6123344e3a051e96",
+    "valid": 366,
+    "historical_failures": 5
+  },
+  "source_sha256": {
+    "serve.py": "e3e2f70c44f6c14bfbbdbdefbaf4414e0a8d75a770c749901ebbaac25574ca11",
+    "jev_inference.py": "b03d650506926feff6a90e985f9480e0f62a1c18b9514d022fb2c032f3c54b3c",
+    "bounded_sdpa.py": "5aa992f4a5b7ebe8daacc03661870345d9b6ae8dbcab84b2f33fc159ae2c874f",
+    "serve_bounded.py": "36493dfe7592275a831d6da1160c0d9c4cf7aacc7ac0e7a3f880ce73921318eb"
+  },
+  "original_upstream_sha256": {
+    "serve.py": "e3e2f70c44f6c14bfbbdbdefbaf4414e0a8d75a770c749901ebbaac25574ca11",
+    "jev_inference.py": "b03d650506926feff6a90e985f9480e0f62a1c18b9514d022fb2c032f3c54b3c"
+  },
+  "paired_task": {
+    "experiment": "paired90",
+    "model": "guard",
+    "status": "finished",
+    "started_utc": "2026-11-17T02:04:26.447177+00:00",
+    "returncode": 0,
+    "stopped_after_repeated_errors": false,
+    "elapsed_seconds": 8428.09,
+    "output": "runs/notebook_20261116T225617Z_b4e8fb4b/paired90/guard",
+    "finished_utc": "2026-11-17T04:24:54.554205+00:00"
+  },
+  "prior_guard_processes": [
+    {
+      "expected": {
+        "pid": 6472,
+        "creation_filetime": 134393545757913616,
+        "image_path": "${ORIGINAL_GUARD_RUNTIME}\\.venv\\Scripts\\python.exe"
+      },
+      "observed": null,
+      "status": "original_process_exited"
+    },
+    {
+      "expected": {
+        "pid": 33548,
+        "creation_filetime": 134393545758167881,
+        "image_path": "C:\\Users\\Yingjie Huang\\AppData\\Roaming\\uv\\python\\cpython-3.11.18-windows-x86_64-none\\python.exe"
+      },
+      "observed": null,
+      "status": "original_process_exited"
+    }
+  ],
+  "controller_lock": {
+    "token": "bd5681f9906b46fc900bff9a88e3ba1c",
+    "created_utc": "2026-11-17T04:27:06.431650+00:00",
+    "identity": {
+      "pid": 17464,
+      "creation_filetime": 134393632218488608,
+      "image_path": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\python3.9.exe",
+      "alive": true
+    },
+    "driver_sha256": "3574a63cf94569b2486fb4c36cd65949dbd6ae3ccfedcc7cebf215e933dccd7b"
+  },
+  "ownership_policy": "private KILL_ON_JOB_CLOSE job assigned to suspended process before resume",
+  "retry_policy": "one-time recovery for the fixed 371-row prefix; partial recovery requires a new audited plan",
+  "initial_scored": 366,
+  "resumed_expected": 634,
+  "guard_python": "${ORIGINAL_GUARD_RUNTIME}\\.venv\\Scripts\\python.exe",
+  "replay_python": "C:\\Users\\Yingjie Huang\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\python.exe",
+  "checkpoint": "${ORIGINAL_GUARD_RUNTIME}\\jev-model\\checkpoint",
+  "base_model": "${ORIGINAL_GUARD_RUNTIME}\\qwen-base",
+  "frozen_input_sha256": {
+    "full1000": "d0e01a64bd08ca926b1cee7f048766c46c3e23fedc5c0e661758c6e634feb909",
+    "paired90": "c4fb45e9a8310ea3d7da071c767256f334de698d7d5c8845136453a30e61b79b"
+  },
+  "record_scope": "Historical experiment record with author-local filesystem paths normalized for publication. Recorded source/artifact digests and original execution timestamps describe the original pre-normalization artifacts; they are not claimed as digests of these published metadata or re-rendered report files. Predictions, inputs, model settings, and numeric results are unchanged. Current published hashes are recorded in provenance/repository_copy_manifest.json and provenance/research_export_validation.json.",
+  "source_artifact_sha256": "c4cc0dd0cde38465753b4d788c82289a2538b2721bc0af820355385f18dba922"
+}

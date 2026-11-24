@@ -1,0 +1,145 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-11-17T10:26:59.473079+00:00",
+  "session": "runs/notebook_20261116T225617Z_b4e8fb4b",
+  "report_directory": "runs/notebook_20261116T225617Z_b4e8fb4b/completed_report",
+  "report_notebook": "runs/notebook_20261116T225617Z_b4e8fb4b/completed_report/run_and_compare.executed.ipynb",
+  "report_rendered_without_model_calls": true,
+  "initial_live_notebook_sha256": "bc25a173619a00dba76aabe1437ff09603924761dd134a265702394f6d6478e2",
+  "bounded_recovery": {
+    "attempt_directory": "runs/notebook_20261116T225617Z_b4e8fb4b/recovery/bounded_20261117T042707Z_e8fa50ae",
+    "summary_sha256": "14eff13634426f74006782e71a961de68e62026f8d8533f551712d671f086dcf",
+    "parity_sha256": "a964202c535c4ddd3eadf6133f0b6cf6ea8add193b0cc81377d7f41a700bcc3e",
+    "parity_sample_ids": [
+      "1",
+      "365",
+      "366",
+      "354"
+    ],
+    "nearest_threshold_reference_id": "354",
+    "parity_max_absolute_probability_error": 1.6093254089355469e-06,
+    "parity_tolerance_absolute_probability": 0.0001,
+    "parity_passed": true,
+    "production_runtime": {
+      "implementation": "query_chunked_cpu_float32_math_sdpa",
+      "chunk_size": 256,
+      "threshold": 4096,
+      "full_key_value_context": true,
+      "truncation": false,
+      "device": "cpu",
+      "dtype": "float32",
+      "torch_threads": 4,
+      "all_tokens": true,
+      "source_sha256": {
+        "serve.py": "e3e2f70c44f6c14bfbbdbdefbaf4414e0a8d75a770c749901ebbaac25574ca11",
+        "jev_inference.py": "b03d650506926feff6a90e985f9480e0f62a1c18b9514d022fb2c032f3c54b3c",
+        "bounded_sdpa.py": "5aa992f4a5b7ebe8daacc03661870345d9b6ae8dbcab84b2f33fc159ae2c874f",
+        "serve_bounded.py": "36493dfe7592275a831d6da1160c0d9c4cf7aacc7ac0e7a3f880ce73921318eb"
+      }
+    },
+    "original_valid_predictions": 366,
+    "new_successful_bounded_predictions": 634,
+    "prediction_prefix": {
+      "bytes": 393844,
+      "rows": 371,
+      "sha256_before": "20c8835bf50adb662fade2426c02f401a0a28fc62458b0df6123344e3a051e96",
+      "sha256_after": "20c8835bf50adb662fade2426c02f401a0a28fc62458b0df6123344e3a051e96",
+      "unchanged": true
+    },
+    "historical_error_rows": 5,
+    "original_preservation": {
+      "original_evidence_files_unchanged": 23,
+      "original_executable_files_unchanged": 13,
+      "preexisting_files_unchanged_excluding_authorized_english_edits": 63,
+      "authorized_english_edit_paths": [
+        "code/guard/UPSTREAM_MODEL_CARD.md",
+        "code/guard/UPSTREAM_MODEL_CARD.zh-CN.md",
+        "run_and_compare.ipynb"
+      ],
+      "english_source_notebook_sha256": "76cbe054f1f5f1784550966caa15d0c2789166255ab01e12feba4e03f45e2676",
+      "source_notebook_preserved_with_historical_view": true
+    },
+    "existing_local_guard_paths": {
+      "GUARD_PYTHON": "${ORIGINAL_GUARD_RUNTIME}\\.venv\\Scripts\\python.exe",
+      "GUARD_CHECKPOINT": "${ORIGINAL_GUARD_RUNTIME}\\jev-model\\checkpoint",
+      "GUARD_BASE_MODEL": "${ORIGINAL_GUARD_RUNTIME}\\qwen-base"
+    },
+    "records": [
+      {
+        "path": "runs/notebook_20261116T225617Z_b4e8fb4b/recovery/bounded_20261117T042707Z_e8fa50ae/controller_lock.released.json",
+        "sha256": "718265d3b20305f697a64903811c577c96d39709ebb327465f69917a7a45151a"
+      },
+      {
+        "path": "runs/notebook_20261116T225617Z_b4e8fb4b/recovery/bounded_20261117T042707Z_e8fa50ae/guard_runtime.json",
+        "sha256": "91cbc4620099f65e632ebc6c07f06d6fcfd91502452d68fbfab7f93580e51ab2"
+      },
+      {
+        "path": "runs/notebook_20261116T225617Z_b4e8fb4b/recovery/bounded_20261117T042707Z_e8fa50ae/parity.json",
+        "sha256": "a964202c535c4ddd3eadf6133f0b6cf6ea8add193b0cc81377d7f41a700bcc3e"
+      },
+      {
+        "path": "runs/notebook_20261116T225617Z_b4e8fb4b/recovery/bounded_20261117T042707Z_e8fa50ae/parity_health.json",
+        "sha256": "5050c7976b37df1e66519618ba41ab218d6d1192356d850e84ee05c80b13dae6"
+      },
+      {
+        "path": "runs/notebook_20261116T225617Z_b4e8fb4b/recovery/bounded_20261117T042707Z_e8fa50ae/parity_plan.json",
+        "sha256": "4d13f22d5cdea6f204a568d363fdc4cebb64f622b3d76bf0df178241969c3979"
+      },
+      {
+        "path": "runs/notebook_20261116T225617Z_b4e8fb4b/recovery/bounded_20261117T042707Z_e8fa50ae/production_health.json",
+        "sha256": "b2387553ee3936ee9d70bd31ab324f428469cb3ca817eaaf0bc46dd301e84617"
+      },
+      {
+        "path": "runs/notebook_20261116T225617Z_b4e8fb4b/recovery/bounded_20261117T042707Z_e8fa50ae/provenance.json",
+        "sha256": "c4cc0dd0cde38465753b4d788c82289a2538b2721bc0af820355385f18dba922"
+      },
+      {
+        "path": "runs/notebook_20261116T225617Z_b4e8fb4b/recovery/bounded_20261117T042707Z_e8fa50ae/recovery_summary.json",
+        "sha256": "14eff13634426f74006782e71a961de68e62026f8d8533f551712d671f086dcf"
+      },
+      {
+        "path": "runs/notebook_20261116T225617Z_b4e8fb4b/recovery/bounded_20261117T042707Z_e8fa50ae/replay_launch.json",
+        "sha256": "0fc5fa9e6c41e752608a190197fc84986f3e23ad51f1849a1937a179a866d30a"
+      },
+      {
+        "path": "runs/notebook_20261116T225617Z_b4e8fb4b/recovery/bounded_20261117T042707Z_e8fa50ae/stale_lock_preservation.json",
+        "sha256": "4050557020bdaaa83493cd25a282dabdf1b40d9672fdbc8eba6df77769b60a27"
+      },
+      {
+        "path": "runs/notebook_20261116T225617Z_b4e8fb4b/recovery/bounded_20261117T042707Z_e8fa50ae/status.json",
+        "sha256": "bb89fa94efa7a0337b5a68fb0d8c5ff3e35c1c1e06ca31034de39d31fd9dbd40"
+      }
+    ]
+  },
+  "retained_historical_failed_prediction_records": 5,
+  "recovered_failed_prediction_records": 5,
+  "recovered_unique_inputs": 5,
+  "unresolved_prediction_errors": 0,
+  "pending_inputs": 0,
+  "full_test_valid_predictions": 3000,
+  "paired_valid_predictions": 810,
+  "complete_experiment_model_groups": 6,
+  "execution_errors": 0,
+  "executed_code_cells": 9,
+  "embedded_and_exported_figures": 6,
+  "original_evidence_files_unchanged": 23,
+  "original_executable_files_unchanged": 13,
+  "preexisting_files_unchanged_excluding_authorized_english_edits": 63,
+  "authorized_english_edit_paths": [
+    "code/guard/UPSTREAM_MODEL_CARD.md",
+    "code/guard/UPSTREAM_MODEL_CARD.zh-CN.md",
+    "run_and_compare.ipynb"
+  ],
+  "english_source_notebook_sha256": "76cbe054f1f5f1784550966caa15d0c2789166255ab01e12feba4e03f45e2676",
+  "source_notebook_preserved_with_historical_view": true,
+  "saved_live_switch": false,
+  "saved_view_run": "runs/notebook_20261116T225617Z_b4e8fb4b",
+  "rendered_full_arm_and_effect_tables_match_recomputed_predictions": true,
+  "validated_results_metrics_match_recomputed_predictions": true,
+  "exported_figures_match_executed_notebook": true,
+  "executed_notebook_sha256": "4be9e4df0dc388a25c78df2aa11aaa4ceff74f797920af17ba376a767d5a7f0d",
+  "validated_results_sha256": "9a27b39b951ba039f4288196ee537cb20875db9e0a7cc8e29e588bfcc4179a10",
+  "verification_performed_model_calls": 0,
+  "record_scope": "Historical experiment record with author-local filesystem paths normalized for publication. Recorded source/artifact digests and original execution timestamps describe the original pre-normalization artifacts; they are not claimed as digests of these published metadata or re-rendered report files. Predictions, inputs, model settings, and numeric results are unchanged. Current published hashes are recorded in provenance/repository_copy_manifest.json and provenance/research_export_validation.json.",
+  "source_artifact_sha256": "83f92d89a063690896469fb68323f3954c57291d3c99da10e202713960075062"
+}

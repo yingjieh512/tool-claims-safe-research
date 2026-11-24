@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "record_scope": "Current publication export, verified without model calls.",
+  "model_calls": 0,
+  "executed_code_cells": 9,
+  "figures": 6,
+  "offline_default": true,
+  "bounded_workflow_import": true,
+  "portable_notebook_sha256": "427ca4eba090c8b3dbfb67c056ce596668b39fccef6c5cbd4a65a14fc6d6045f"
+}

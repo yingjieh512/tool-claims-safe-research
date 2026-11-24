@@ -1,0 +1,33 @@
+{
+  "observed_at": "2026-11-15",
+  "python": "3.11.18 (main, Oct 26 2026, 14:08:50) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "device": "cpu",
+  "dtype": "float32",
+  "base_model": {
+    "repo_id": "Qwen/Qwen3.5-2B",
+    "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "weights_file": "model.safetensors-00001-of-00001.safetensors",
+    "weights_sha256": "aa33250c4fc64891ddfaba3a314fd9542ea371843c387178b425fbcc5ed680b1",
+    "weights_bytes": 4548221488
+  },
+  "guard_model": {
+    "repo_id": "hubin/jev-guard-v3.2-2b",
+    "revision": "9b7d0019018cd2f1b0731ff9380727bc2211ca73",
+    "checkpoint_update": 1508,
+    "adapter_sha256": "579f9527ce3ae05026d02bf8e0d6e466f8cb7d3670a9a7ccc6b6e817debae9e9",
+    "heads_sha256": "f8f33b57f8597c2fdc17fca83e52e5ddc943325934e3592c3f465fe4cc1c8df6",
+    "score_head_sha256": "7cce45de660d680e77bc3769947908cb80be0240f47e64d53918021b347f0e5d"
+  },
+  "packages": {
+    "torch": "2.8.0",
+    "transformers": "5.10.2",
+    "peft": "0.19.1",
+    "safetensors": "0.8.0",
+    "huggingface-hub": "1.32.0",
+    "accelerate": "1.15.0",
+    "tokenizers": "0.22.2",
+    "numpy": "2.4.6"
+  },
+  "scope": "Versions inspected in the existing local Guard environment; this is not a claim that the historical hosted full-1000 run used this environment."
+}

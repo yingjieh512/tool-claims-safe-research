@@ -1,0 +1,24 @@
+{
+  "status": "ready",
+  "model": "jev-v3.2-2b",
+  "context_limit": 16384,
+  "text_only": true,
+  "truncation": false,
+  "guard_runtime": {
+    "implementation": "query_chunked_cpu_float32_math_sdpa",
+    "chunk_size": 256,
+    "threshold": 0,
+    "full_key_value_context": true,
+    "truncation": false,
+    "device": "cpu",
+    "dtype": "float32",
+    "torch_threads": 4,
+    "all_tokens": true,
+    "source_sha256": {
+      "serve.py": "e3e2f70c44f6c14bfbbdbdefbaf4414e0a8d75a770c749901ebbaac25574ca11",
+      "jev_inference.py": "b03d650506926feff6a90e985f9480e0f62a1c18b9514d022fb2c032f3c54b3c",
+      "bounded_sdpa.py": "5aa992f4a5b7ebe8daacc03661870345d9b6ae8dbcab84b2f33fc159ae2c874f",
+      "serve_bounded.py": "36493dfe7592275a831d6da1160c0d9c4cf7aacc7ac0e7a3f880ce73921318eb"
+    }
+  }
+}

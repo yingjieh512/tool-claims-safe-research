@@ -1,0 +1,186 @@
+{
+  "source_repository": "https://github.com/yingjieh512/capstone-for-agent-security",
+  "git_commit": "19ed817d1923854c5abdda5fe9ae25f7b6124b3b",
+  "source_worktree_status": [
+    " M scripts/eval_jev_adversarial_pairs.py",
+    " M scripts/eval_jev_atbench.py"
+  ],
+  "copied_files": [
+    {
+      "source_relative_path": "outputs/jev-atbench/predictions.jsonl",
+      "bundle_path": "results/full1000/guard/predictions.jsonl",
+      "sha256": "0db78babe96c79deefea799d297168a48eb8a88dc129e32317f58cd62ed7f975",
+      "bytes": 255557
+    },
+    {
+      "source_relative_path": "outputs/jev-atbench/summary.json",
+      "bundle_path": "results/full1000/guard/summary.json",
+      "sha256": "e5602bf5418249e1eb77a30576388f114b7b30f7260f1174e997eb89bea2e7a9",
+      "bytes": 1989
+    },
+    {
+      "source_relative_path": "outputs/typesafe-atbench-jev-1.13.0/full/predictions.jsonl",
+      "bundle_path": "results/full1000/jev-1.13.0/predictions.jsonl",
+      "sha256": "5ad353ba1b9cf383eebbb03132042f1f906f7040a4abdc9036c0c7c344d5b672",
+      "bytes": 618933
+    },
+    {
+      "source_relative_path": "outputs/typesafe-atbench-jev-1.13.0/full/summary.json",
+      "bundle_path": "results/full1000/jev-1.13.0/summary.json",
+      "sha256": "90d032ea04db52ba8a34bc34a23c11d9f4a4447f00ba6149f25cce1d9160b0db",
+      "bytes": 2239
+    },
+    {
+      "source_relative_path": "outputs/typesafe-atbench-jev-1.14.0/full/predictions.jsonl",
+      "bundle_path": "results/full1000/jev-1.14.0/predictions.jsonl",
+      "sha256": "29d6345d9f1180e1096c01fd9981fe8a8f6f7c834bef9cddd8a58bf436e84973",
+      "bytes": 618916
+    },
+    {
+      "source_relative_path": "outputs/typesafe-atbench-jev-1.14.0/full/summary.json",
+      "bundle_path": "results/full1000/jev-1.14.0/summary.json",
+      "sha256": "bb81f5619f4b05d0826d614b2de380e4b00cd1178885f77db876ba1cf26d14a2",
+      "bytes": 2259
+    },
+    {
+      "source_relative_path": "outputs/common-tp-90-tail-2026-11-08/jev-guard-local/predictions.jsonl",
+      "bundle_path": "results/paired90/guard/predictions.jsonl",
+      "sha256": "a199c260e6e00d15256dcb533b121d5b09154d8c3d0b325e36780079063bc0ab",
+      "bytes": 236128
+    },
+    {
+      "source_relative_path": "outputs/common-tp-90-tail-2026-11-08/jev-guard-local/summary.json",
+      "bundle_path": "results/paired90/guard/summary.json",
+      "sha256": "87c9485a3692b749baa537bce62d5ba68678c162611858b671893561a4ade43f",
+      "bytes": 10970
+    },
+    {
+      "source_relative_path": "outputs/common-tp-90-tail-2026-11-08/jev-guard-local/pairs.jsonl",
+      "bundle_path": "results/paired90/guard/pairs.jsonl",
+      "sha256": "57713a094a07021e00a212f3b9e3b556a6c0fa468e9e1376cb86619f47605066",
+      "bytes": 48239
+    },
+    {
+      "source_relative_path": "outputs/common-tp-90-tail-2026-11-08/typesafe-1.13/predictions.jsonl",
+      "bundle_path": "results/paired90/jev-1.13.0/predictions.jsonl",
+      "sha256": "acea2924f713c5281f83d1fcdee113c4ed9ae8580ca5984dfd3314f55778b261",
+      "bytes": 242219
+    },
+    {
+      "source_relative_path": "outputs/common-tp-90-tail-2026-11-08/typesafe-1.13/summary.json",
+      "bundle_path": "results/paired90/jev-1.13.0/summary.json",
+      "sha256": "94dec762485b06059805263d94cbb1cc2268158b475998601d0bbc19de486913",
+      "bytes": 11322
+    },
+    {
+      "source_relative_path": "outputs/common-tp-90-tail-2026-11-08/typesafe-1.13/pairs.jsonl",
+      "bundle_path": "results/paired90/jev-1.13.0/pairs.jsonl",
+      "sha256": "e69b1163f389acb039f48906a42ef0156ac22218d666b058e5214ca00ed495c7",
+      "bytes": 44444
+    },
+    {
+      "source_relative_path": "outputs/common-tp-90-tail-2026-11-08/typesafe-1.14/predictions.jsonl",
+      "bundle_path": "results/paired90/jev-1.14.0/predictions.jsonl",
+      "sha256": "df35de12020aca67610073cf53e4d21dfb380e8a80f2414f7f56f1eb6627f33b",
+      "bytes": 242194
+    },
+    {
+      "source_relative_path": "outputs/common-tp-90-tail-2026-11-08/typesafe-1.14/summary.json",
+      "bundle_path": "results/paired90/jev-1.14.0/summary.json",
+      "sha256": "c18b62bbc7111f31aa3afe9d3de398036619acf90ec65ef8a2e861150a68f7e3",
+      "bytes": 11306
+    },
+    {
+      "source_relative_path": "outputs/common-tp-90-tail-2026-11-08/typesafe-1.14/pairs.jsonl",
+      "bundle_path": "results/paired90/jev-1.14.0/pairs.jsonl",
+      "sha256": "9f6451cb1fb7872eb594ec4b95224a706fd415a57fe90d2c7530da51f6e99fe0",
+      "bytes": 44438
+    },
+    {
+      "source_relative_path": "outputs/common-tp-90-tail-2026-11-08/states.jsonl",
+      "bundle_path": "inputs/paired90_states.jsonl",
+      "sha256": "c4fb45e9a8310ea3d7da071c767256f334de698d7d5c8845136453a30e61b79b",
+      "bytes": 2651631
+    },
+    {
+      "source_relative_path": "outputs/common-tp-90-tail-2026-11-08/manifest.jsonl",
+      "bundle_path": "inputs/paired90_manifest.jsonl",
+      "sha256": "a4e9337ed43999f19d5cb06facf55f26b7faf6bbd6cd40a86c47d3ce95a1c8d9",
+      "bytes": 587048
+    },
+    {
+      "source_relative_path": "outputs/common-tp-90-tail-2026-11-08/common_selection.json",
+      "bundle_path": "inputs/selection.json",
+      "sha256": "47511634761f5caec79a497db76d2536d760a05ac5d62d0944b34bcfd333965b",
+      "bytes": 2184
+    },
+    {
+      "source_relative_path": "outputs/common-tp-90-tail-2026-11-08/summary.json",
+      "bundle_path": "inputs/construction_summary.json",
+      "sha256": "03c3943b7958934e38e1ad04349e3208e0fab15aadce5445577fb0c9e6367158",
+      "bytes": 2773
+    },
+    {
+      "source_relative_path": "outputs/common-tp-90-tail-2026-11-08/cross-judge/comparison.json",
+      "bundle_path": "results/paired90/comparison.json",
+      "sha256": "d0f8c49f7849745db67f081b85b447bf5084b90bcec6e1a02d8238894cf876e0",
+      "bytes": 9166
+    },
+    {
+      "source_relative_path": "outputs/common-tp-90-tail-2026-11-08/cross-judge/per_parent.jsonl",
+      "bundle_path": "results/paired90/per_parent.jsonl",
+      "sha256": "4f029b50b0f2168ace010884b01ac18a06d5fc610b158362b53968d0b2c2abc5",
+      "bytes": 77005
+    },
+    {
+      "source_relative_path": "data/raw/atbench/test.json",
+      "bundle_path": "data/atbench_test.json",
+      "sha256": "80c534b5f3517c872b528a2e6b64e34495206968edd184f4aed563d39f0cca09",
+      "bytes": 18335079
+    },
+    {
+      "source_relative_path": "src/trajectory_audit/__init__.py",
+      "bundle_path": "code/trajectory_audit/__init__.py",
+      "sha256": "884d9704a79a13d2f251c17a6f38591ec49ebe698509a977303d80821090931b",
+      "bytes": 103
+    },
+    {
+      "source_relative_path": "src/trajectory_audit/data.py",
+      "bundle_path": "code/trajectory_audit/data.py",
+      "sha256": "24ddb1d0f14f0e511ffa804242d9ca307792fb9819529ef91aa7d5ee0da4914a",
+      "bytes": 32988
+    },
+    {
+      "source_relative_path": "src/trajectory_audit/views.py",
+      "bundle_path": "code/trajectory_audit/views.py",
+      "sha256": "cf53e9c7ea2f50582ef4d6dc9324773bf03033ec930c6545a156094c1fa4a5bc",
+      "bytes": 6274
+    },
+    {
+      "source_relative_path": "src/trajectory_audit/adversarial.py",
+      "bundle_path": "code/trajectory_audit/adversarial.py",
+      "sha256": "a7ed0b0bc349ea2768540b962e06eb26bc5ab479d53f5c13277e8aa564862af4",
+      "bytes": 13891
+    },
+    {
+      "source_relative_path": "LICENSE",
+      "bundle_path": "provenance/SOURCE_LICENSE",
+      "sha256": "5a890eccd136e5cfea70d8bf6825c3ab34d62fc5399e5a6e72f5e69a14805ec0",
+      "bytes": 1107
+    }
+  ],
+  "reference_script_sha256": {
+    "eval_jev_atbench.py": "146cce48dd34583c80b55948312ce98faf65e821f45a4860d7f81608ed9e8608",
+    "eval_typesafe_atbench.py": "491eba2e69d3bebdb3159cc849443eb27861151a57e53d3cb6e97a3f1efdf897",
+    "eval_jev_adversarial_pairs.py": "4b250c853143ab3d03601ba155ee2e0609e13f398153a2fa6c7a8ecc5f9325a4",
+    "eval_typesafe_adversarial_pairs.py": "d7528a917e9177c7f1ebfb911579beca5d97938d8a86f68f4f5c5e801e9bd3d7",
+    "construct_jev_adversarial.py": "c22667da7ad4babcb1619406bf0b45af5a18cfd82923b147cbea8bec7b1c287c",
+    "compare_jev_adversarial_judges.py": "abe3d1e25e6654d2440993b6307752d575e1a344a951be5c8efb6921d78e32d1"
+  },
+  "notes": [
+    "Prediction archives copied byte-for-byte; no model calls performed when assembling this bundle.",
+    "Guard full1000 is a historical hosted run. Guard paired90 is a local CPU float32 run.",
+    "Rerun code consolidated; dataset normalization, view serialization, and perturbations preserved unchanged.",
+    "Committee edition: execution wrappers regrouped under code; raw predictions and frozen input archives are byte-identical to the validated analysis bundle."
+  ]
+}

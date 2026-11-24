@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-11-17T10:26:34.172086+00:00",
+  "valid": 1000,
+  "failed": 0,
+  "pending": 0,
+  "remaining_unscored": 0,
+  "raw_rows": 1005,
+  "raw_historical_failures": 5,
+  "incomplete_tail_bytes": 0,
+  "phase": "replay_finished"
+}

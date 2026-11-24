@@ -1,0 +1,386 @@
+{
+  "status": "passed",
+  "created_utc": "2026-11-17T02:10:11.350564+00:00",
+  "torch": "2.8.0+cpu",
+  "threads": 4,
+  "seed": 20261117,
+  "rtol": 2e-05,
+  "atol": 2e-06,
+  "numerical_cases": [
+    {
+      "case": "gqa_noncausal",
+      "query_shape": [
+        2,
+        4,
+        37,
+        16
+      ],
+      "key_shape": [
+        2,
+        2,
+        41,
+        16
+      ],
+      "max_absolute_error_vs_original_dispatch": 0.0,
+      "max_absolute_error_vs_original_math": 0.0,
+      "exact_vs_original_dispatch": true,
+      "exact_vs_original_math": true,
+      "all_finite": true
+    },
+    {
+      "case": "gqa_causal_rectangular",
+      "query_shape": [
+        2,
+        4,
+        37,
+        16
+      ],
+      "key_shape": [
+        2,
+        2,
+        41,
+        16
+      ],
+      "max_absolute_error_vs_original_dispatch": 0.0,
+      "max_absolute_error_vs_original_math": 0.0,
+      "exact_vs_original_dispatch": true,
+      "exact_vs_original_math": true,
+      "all_finite": true
+    },
+    {
+      "case": "gqa_causal_square",
+      "query_shape": [
+        2,
+        4,
+        37,
+        16
+      ],
+      "key_shape": [
+        2,
+        2,
+        37,
+        16
+      ],
+      "max_absolute_error_vs_original_dispatch": 0.0,
+      "max_absolute_error_vs_original_math": 0.0,
+      "exact_vs_original_dispatch": true,
+      "exact_vs_original_math": true,
+      "all_finite": true
+    },
+    {
+      "case": "gqa_causal_more_queries_than_keys",
+      "query_shape": [
+        2,
+        4,
+        37,
+        16
+      ],
+      "key_shape": [
+        2,
+        2,
+        29,
+        16
+      ],
+      "max_absolute_error_vs_original_dispatch": 0.0,
+      "max_absolute_error_vs_original_math": 0.0,
+      "exact_vs_original_dispatch": true,
+      "exact_vs_original_math": true,
+      "all_finite": true
+    },
+    {
+      "case": "custom_scale",
+      "query_shape": [
+        2,
+        4,
+        37,
+        16
+      ],
+      "key_shape": [
+        2,
+        2,
+        41,
+        16
+      ],
+      "max_absolute_error_vs_original_dispatch": 0.0,
+      "max_absolute_error_vs_original_math": 0.0,
+      "exact_vs_original_dispatch": true,
+      "exact_vs_original_math": true,
+      "all_finite": true
+    },
+    {
+      "case": "zero_scale",
+      "query_shape": [
+        2,
+        4,
+        37,
+        16
+      ],
+      "key_shape": [
+        2,
+        2,
+        41,
+        16
+      ],
+      "max_absolute_error_vs_original_dispatch": 0.0,
+      "max_absolute_error_vs_original_math": 0.0,
+      "exact_vs_original_dispatch": true,
+      "exact_vs_original_math": true,
+      "all_finite": true
+    },
+    {
+      "case": "boolean_mask_fully_masked_row",
+      "query_shape": [
+        2,
+        4,
+        37,
+        16
+      ],
+      "key_shape": [
+        2,
+        2,
+        41,
+        16
+      ],
+      "max_absolute_error_vs_original_dispatch": 0.0,
+      "max_absolute_error_vs_original_math": 0.0,
+      "exact_vs_original_dispatch": true,
+      "exact_vs_original_math": true,
+      "all_finite": true,
+      "fully_masked_row_is_exact_zero": true
+    },
+    {
+      "case": "additive_mask_fully_masked_row",
+      "query_shape": [
+        2,
+        4,
+        37,
+        16
+      ],
+      "key_shape": [
+        2,
+        2,
+        41,
+        16
+      ],
+      "max_absolute_error_vs_original_dispatch": 0.0,
+      "max_absolute_error_vs_original_math": 0.0,
+      "exact_vs_original_dispatch": true,
+      "exact_vs_original_math": true,
+      "all_finite": true,
+      "fully_masked_row_is_exact_zero": true
+    },
+    {
+      "case": "finite_minimum_mask_row",
+      "query_shape": [
+        2,
+        4,
+        37,
+        16
+      ],
+      "key_shape": [
+        2,
+        2,
+        41,
+        16
+      ],
+      "max_absolute_error_vs_original_dispatch": 0.0,
+      "max_absolute_error_vs_original_math": 0.0,
+      "exact_vs_original_dispatch": true,
+      "exact_vs_original_math": true,
+      "all_finite": true,
+      "finite_minimum_row_max_abs": 0.3365146815776825
+    },
+    {
+      "case": "boolean_4d_broadcast",
+      "query_shape": [
+        2,
+        4,
+        37,
+        16
+      ],
+      "key_shape": [
+        2,
+        2,
+        41,
+        16
+      ],
+      "max_absolute_error_vs_original_dispatch": 0.0,
+      "max_absolute_error_vs_original_math": 0.0,
+      "exact_vs_original_dispatch": true,
+      "exact_vs_original_math": true,
+      "all_finite": true
+    },
+    {
+      "case": "additive_3d_head_mask",
+      "query_shape": [
+        2,
+        4,
+        37,
+        16
+      ],
+      "key_shape": [
+        2,
+        2,
+        41,
+        16
+      ],
+      "max_absolute_error_vs_original_dispatch": 0.0,
+      "max_absolute_error_vs_original_math": 0.0,
+      "exact_vs_original_dispatch": true,
+      "exact_vs_original_math": true,
+      "all_finite": true
+    },
+    {
+      "case": "boolean_2d_query_broadcast",
+      "query_shape": [
+        2,
+        4,
+        37,
+        16
+      ],
+      "key_shape": [
+        2,
+        2,
+        41,
+        16
+      ],
+      "max_absolute_error_vs_original_dispatch": 0.0,
+      "max_absolute_error_vs_original_math": 0.0,
+      "exact_vs_original_dispatch": true,
+      "exact_vs_original_math": true,
+      "all_finite": true
+    },
+    {
+      "case": "boolean_2d_key_broadcast",
+      "query_shape": [
+        2,
+        4,
+        37,
+        16
+      ],
+      "key_shape": [
+        2,
+        2,
+        41,
+        16
+      ],
+      "max_absolute_error_vs_original_dispatch": 0.0,
+      "max_absolute_error_vs_original_math": 0.0,
+      "exact_vs_original_dispatch": true,
+      "exact_vs_original_math": true,
+      "all_finite": true
+    },
+    {
+      "case": "gqa_batch_broadcast",
+      "query_shape": [
+        2,
+        4,
+        37,
+        16
+      ],
+      "key_shape": [
+        1,
+        2,
+        41,
+        16
+      ],
+      "max_absolute_error_vs_original_dispatch": 0.0,
+      "max_absolute_error_vs_original_math": 0.0,
+      "exact_vs_original_dispatch": true,
+      "exact_vs_original_math": true,
+      "all_finite": true
+    },
+    {
+      "case": "nongqa_equal_heads",
+      "query_shape": [
+        2,
+        4,
+        37,
+        16
+      ],
+      "key_shape": [
+        2,
+        4,
+        41,
+        16
+      ],
+      "max_absolute_error_vs_original_dispatch": 0.0,
+      "max_absolute_error_vs_original_math": 0.0,
+      "exact_vs_original_dispatch": true,
+      "exact_vs_original_math": true,
+      "all_finite": true
+    },
+    {
+      "case": "nongqa_head_broadcast",
+      "query_shape": [
+        2,
+        1,
+        37,
+        16
+      ],
+      "key_shape": [
+        2,
+        4,
+        41,
+        16
+      ],
+      "max_absolute_error_vs_original_dispatch": 0.0,
+      "max_absolute_error_vs_original_math": 0.0,
+      "exact_vs_original_dispatch": true,
+      "exact_vs_original_math": true,
+      "all_finite": true
+    },
+    {
+      "case": "model_head_shape",
+      "query_shape": [
+        1,
+        8,
+        73,
+        256
+      ],
+      "key_shape": [
+        1,
+        2,
+        73,
+        256
+      ],
+      "max_absolute_error_vs_original_dispatch": 1.952052116394043e-06,
+      "max_absolute_error_vs_original_math": 1.952052116394043e-06,
+      "exact_vs_original_dispatch": false,
+      "exact_vs_original_math": false,
+      "all_finite": true
+    },
+    {
+      "case": "default_threshold_and_nondivisible_256_chunk",
+      "query_shape": [
+        1,
+        4,
+        4097,
+        8
+      ],
+      "key_shape": [
+        1,
+        2,
+        17,
+        8
+      ],
+      "max_absolute_error_vs_original_dispatch": 2.384185791015625e-07,
+      "exact_vs_original_dispatch": false
+    }
+  ],
+  "structural_checks": [
+    "original_delegation_short",
+    "original_delegation_nonfloat32",
+    "original_delegation_noncpu",
+    "original_delegation_dropout",
+    "full_key_value_identity_scale_gqa_and_global_causal_offsets",
+    "unsupported_masks_rejected_before_attention",
+    "original_explicit_mask_plus_causal_error_preserved",
+    "environment_configuration_idempotent_install_and_test_restoration",
+    "wrapper_and_launcher_syntax"
+  ],
+  "max_absolute_error_vs_original_dispatch": 1.952052116394043e-06,
+  "all_exact_vs_original_dispatch": false,
+  "peak_working_set_bytes": 244162560,
+  "model_or_api_calls": 0
+}

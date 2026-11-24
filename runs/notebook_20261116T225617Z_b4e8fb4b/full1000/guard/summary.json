@@ -1,0 +1,28 @@
+{
+  "config": {
+    "experiment": "full1000",
+    "model": "guard",
+    "requested_model": "jev-v3.2-2b",
+    "endpoint": "http://127.0.0.1:29660/predict",
+    "question_sha256": null,
+    "threshold": null,
+    "order_seed": null,
+    "states_sha256": "d0e01a64bd08ca926b1cee7f048766c46c3e23fedc5c0e661758c6e634feb909",
+    "timeout": 1800,
+    "max_attempts": 5,
+    "rate": 2.0
+  },
+  "n_total": 1000,
+  "n_scored": 1000,
+  "n_errors": 0,
+  "n_pending": 0,
+  "tp": 226,
+  "tn": 346,
+  "fp": 157,
+  "fn": 271,
+  "accuracy": 0.572,
+  "precision_unsafe": 0.5900783289817232,
+  "recall_unsafe": 0.45472837022132795,
+  "f1_unsafe": 0.5136363636363637,
+  "error_types": {}
+}

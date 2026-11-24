@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv*/
+venv/
+models/
+.env
+.env.*
+!.env.example
+*credentials*
+*.log
+*.lock
+tmp/
+output/
+outputs/
+/runs/*
+!/runs/notebook_20261116T225617Z_b4e8fb4b/

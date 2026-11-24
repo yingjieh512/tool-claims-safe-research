@@ -1,0 +1,11 @@
+{
+  "dataset_rows": 1000,
+  "safe": 503,
+  "unsafe": 497,
+  "common_true_positives": 122,
+  "eligible_untruncated": 94,
+  "selected_parents": 90,
+  "full1000_middle_omitted": 52,
+  "paired90_states": 270,
+  "all_reconstructed_hashes_match": true
+}

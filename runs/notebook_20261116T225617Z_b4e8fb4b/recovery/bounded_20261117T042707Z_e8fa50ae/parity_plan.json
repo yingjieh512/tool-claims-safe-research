@@ -1,0 +1,31 @@
+{
+  "created_before_model_calls": true,
+  "tolerance_absolute_probability": 0.0001,
+  "selected_ids": [
+    "1",
+    "365",
+    "366",
+    "354"
+  ],
+  "nearest_selection": {
+    "rule": "minimum abs(p_unsafe - 0.5), then lexical ID; initial valid prefix only",
+    "excluded_ids": [
+      "1",
+      "365",
+      "366"
+    ],
+    "candidate_count": 363,
+    "id": "354",
+    "distance_to_threshold": 0.00010514259338378906
+  },
+  "reference_prefix": {
+    "bytes": 393844,
+    "rows": 371,
+    "sha256": "20c8835bf50adb662fade2426c02f401a0a28fc62458b0df6123344e3a051e96",
+    "valid": 366,
+    "historical_failures": 5
+  },
+  "require_same_labels_tokens_and_nonprobability_fields": true,
+  "forced_query_threshold": 0,
+  "chunk_size": 256
+}

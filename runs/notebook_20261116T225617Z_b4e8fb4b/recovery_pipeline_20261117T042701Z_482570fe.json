@@ -1,0 +1,28 @@
+{
+  "started_utc": "2026-11-17T04:27:01.820151+00:00",
+  "status": "complete",
+  "steps": [
+    {
+      "name": "recover_guard_full",
+      "started_utc": "2026-11-17T04:27:01.820151+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-11-17T10:26:34.894486+00:00"
+    },
+    {
+      "name": "render_updated_notebook_and_figures",
+      "started_utc": "2026-11-17T10:26:34.901499+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-11-17T10:26:57.951365+00:00"
+    },
+    {
+      "name": "verify_complete_results_and_preserved_evidence",
+      "started_utc": "2026-11-17T10:26:57.952265+00:00",
+      "status": "passed",
+      "returncode": 0,
+      "finished_utc": "2026-11-17T10:26:59.521290+00:00"
+    }
+  ],
+  "finished_utc": "2026-11-17T10:26:59.521290+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "new_model_calls": 0,
+  "existing_files_unchanged": 62,
+  "simulated_subprocess_jobs": 6,
+  "default_code_cells_executed": 9,
+  "default_embedded_figures": 6,
+  "selected_new_predictions_replace_archive": true,
+  "partial_run_errors": 1,
+  "partial_run_pending": 1,
+  "matched_pair_denominator_validated": 89,
+  "empty_session_pending": 3810,
+  "partial_and_empty_session_notebooks_execute": true,
+  "guard_startup_and_real_API_inference": "not executed; requires installed runtime and credentials",
+  "new_files_sha256": {
+    "code/live_results.py": "3794871d290d2d923e65d7866ce255a6ba7882d46d2e99fb20277a0598e115db",
+    "code/notebook_workflow.py": "0294166d38da6134f775a6adf24f7062ac376cd1804e39b2494f121b896c37a1",
+    "run_and_compare.ipynb": "078ed14a2aecca6468f854ce967b1d0b9f0b8e2d3ea8fc2156f7ab8ea392945e"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "python": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "1.25.2",
+    "pandas": "2.1.4",
+    "matplotlib": "3.8.2",
+    "nbformat": "5.9.2",
+    "nbclient": "0.8.0",
+    "ipykernel": "6.25.2",
+    "jupyterlab": "4.0.5",
+    "nbconvert": "7.8.0"
+  }
+}

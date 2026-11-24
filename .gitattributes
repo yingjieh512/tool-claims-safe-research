@@ -1,0 +1,18 @@
+* -text
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+data/** -text
+inputs/** -text
+results/** -text
+provenance/** -text
+runs/** -text
+figures/** -text
+*.ipynb -text
+*.pdf -text
+code/** -text
+supplementary/** -text
+RESULTS.md -text
+requirements*.txt -text

@@ -1,0 +1,211 @@
+{
+  "status": "complete",
+  "attempt": "${ORIGINAL_COMMITTEE_PACKAGE}\\runs\\notebook_20261116T225617Z_b4e8fb4b\\recovery\\bounded_20261117T042707Z_e8fa50ae",
+  "started_utc": "2026-11-17T04:27:07.115007+00:00",
+  "initial_scored": 366,
+  "resumed_expected": 634,
+  "parity_passed": true,
+  "all_six_complete": true,
+  "parity_max_absolute_probability_error": 1.6093254089355469e-06,
+  "production_runtime": {
+    "implementation": "query_chunked_cpu_float32_math_sdpa",
+    "chunk_size": 256,
+    "threshold": 4096,
+    "full_key_value_context": true,
+    "truncation": false,
+    "device": "cpu",
+    "dtype": "float32",
+    "torch_threads": 4,
+    "all_tokens": true,
+    "source_sha256": {
+      "serve.py": "e3e2f70c44f6c14bfbbdbdefbaf4414e0a8d75a770c749901ebbaac25574ca11",
+      "jev_inference.py": "b03d650506926feff6a90e985f9480e0f62a1c18b9514d022fb2c032f3c54b3c",
+      "bounded_sdpa.py": "5aa992f4a5b7ebe8daacc03661870345d9b6ae8dbcab84b2f33fc159ae2c874f",
+      "serve_bounded.py": "36493dfe7592275a831d6da1160c0d9c4cf7aacc7ac0e7a3f880ce73921318eb"
+    }
+  },
+  "runner_returncode": 0,
+  "prediction_prefix": {
+    "bytes": 393844,
+    "rows": 371,
+    "sha256_before": "20c8835bf50adb662fade2426c02f401a0a28fc62458b0df6123344e3a051e96",
+    "sha256_after": "20c8835bf50adb662fade2426c02f401a0a28fc62458b0df6123344e3a051e96",
+    "unchanged": true
+  },
+  "full_summary": {
+    "config": {
+      "experiment": "full1000",
+      "model": "guard",
+      "requested_model": "jev-v3.2-2b",
+      "endpoint": "http://127.0.0.1:29660/predict",
+      "question_sha256": null,
+      "threshold": null,
+      "order_seed": null,
+      "states_sha256": "d0e01a64bd08ca926b1cee7f048766c46c3e23fedc5c0e661758c6e634feb909",
+      "timeout": 1800,
+      "max_attempts": 5,
+      "rate": 2.0
+    },
+    "n_total": 1000,
+    "n_scored": 1000,
+    "n_errors": 0,
+    "n_pending": 0,
+    "tp": 226,
+    "tn": 346,
+    "fp": 157,
+    "fn": 271,
+    "accuracy": 0.572,
+    "precision_unsafe": 0.5900783289817232,
+    "recall_unsafe": 0.45472837022132795,
+    "f1_unsafe": 0.5136363636363637,
+    "error_types": {}
+  },
+  "coverage": [
+    {
+      "experiment": "full1000",
+      "model": "guard",
+      "expected": 1000,
+      "scored": 1000,
+      "failed": 0,
+      "pending": 0,
+      "coverage": 1.0,
+      "complete": true,
+      "status": "complete",
+      "source": "runs/notebook_20261116T225617Z_b4e8fb4b"
+    },
+    {
+      "experiment": "full1000",
+      "model": "jev-1.13.0",
+      "expected": 1000,
+      "scored": 1000,
+      "failed": 0,
+      "pending": 0,
+      "coverage": 1.0,
+      "complete": true,
+      "status": "complete",
+      "source": "runs/notebook_20261116T225617Z_b4e8fb4b"
+    },
+    {
+      "experiment": "full1000",
+      "model": "jev-1.14.0",
+      "expected": 1000,
+      "scored": 1000,
+      "failed": 0,
+      "pending": 0,
+      "coverage": 1.0,
+      "complete": true,
+      "status": "complete",
+      "source": "runs/notebook_20261116T225617Z_b4e8fb4b"
+    },
+    {
+      "experiment": "paired90",
+      "model": "guard",
+      "expected": 270,
+      "scored": 270,
+      "failed": 0,
+      "pending": 0,
+      "coverage": 1.0,
+      "complete": true,
+      "status": "complete",
+      "source": "runs/notebook_20261116T225617Z_b4e8fb4b"
+    },
+    {
+      "experiment": "paired90",
+      "model": "jev-1.13.0",
+      "expected": 270,
+      "scored": 270,
+      "failed": 0,
+      "pending": 0,
+      "coverage": 1.0,
+      "complete": true,
+      "status": "complete",
+      "source": "runs/notebook_20261116T225617Z_b4e8fb4b"
+    },
+    {
+      "experiment": "paired90",
+      "model": "jev-1.14.0",
+      "expected": 270,
+      "scored": 270,
+      "failed": 0,
+      "pending": 0,
+      "coverage": 1.0,
+      "complete": true,
+      "status": "complete",
+      "source": "runs/notebook_20261116T225617Z_b4e8fb4b"
+    }
+  ],
+  "historical_error_rows": 5,
+  "appended_records": 634,
+  "all_appended_runtime_verified": true,
+  "cleanup_errors": [],
+  "owned_process_jobs": [
+    {
+      "ownership": "windows_job_object",
+      "assigned_before_resume": true,
+      "kill_on_job_close": true,
+      "identity": {
+        "pid": 21524,
+        "creation_filetime": 134393632271575365,
+        "image_path": "${ORIGINAL_GUARD_RUNTIME}\\.venv\\Scripts\\python.exe"
+      },
+      "role": "parity_server",
+      "launcher_returncode_before_cleanup": null,
+      "active_processes_before_cleanup": 3,
+      "active_processes_after_cleanup": 0,
+      "launcher_returncode": 1,
+      "cleanup_verified": true
+    },
+    {
+      "ownership": "windows_job_object",
+      "assigned_before_resume": true,
+      "kill_on_job_close": true,
+      "identity": {
+        "pid": 28008,
+        "creation_filetime": 134393634740457180,
+        "image_path": "${ORIGINAL_GUARD_RUNTIME}\\.venv\\Scripts\\python.exe"
+      },
+      "role": "production_server",
+      "launcher_returncode_before_cleanup": null,
+      "active_processes_before_cleanup": 3,
+      "active_processes_after_cleanup": 0,
+      "launcher_returncode": 1,
+      "cleanup_verified": true
+    },
+    {
+      "ownership": "windows_job_object",
+      "assigned_before_resume": true,
+      "kill_on_job_close": true,
+      "identity": {
+        "pid": 18676,
+        "creation_filetime": 134393635019238475,
+        "image_path": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\python3.9.exe"
+      },
+      "role": "full1000_guard_runner",
+      "launcher_returncode_before_cleanup": 0,
+      "active_processes_before_cleanup": 0,
+      "active_processes_after_cleanup": 0,
+      "launcher_returncode": 0,
+      "cleanup_verified": true
+    }
+  ],
+  "owned_cleanup_verified": true,
+  "controller_lock_release": {
+    "status": "released_and_preserved",
+    "path": "${ORIGINAL_COMMITTEE_PACKAGE}\\runs\\notebook_20261116T225617Z_b4e8fb4b\\recovery\\bounded_20261117T042707Z_e8fa50ae\\controller_lock.released.json",
+    "owner": {
+      "token": "bd5681f9906b46fc900bff9a88e3ba1c",
+      "created_utc": "2026-11-17T04:27:06.431650+00:00",
+      "identity": {
+        "pid": 17464,
+        "creation_filetime": 134393632218488608,
+        "image_path": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\python3.9.exe",
+        "alive": true
+      },
+      "driver_sha256": "3574a63cf94569b2486fb4c36cd65949dbd6ae3ccfedcc7cebf215e933dccd7b"
+    },
+    "cleanup_verified": true
+  },
+  "finished_utc": "2026-11-17T10:26:34.684573+00:00",
+  "record_scope": "Historical experiment record with author-local filesystem paths normalized for publication. Recorded source/artifact digests and original execution timestamps describe the original pre-normalization artifacts; they are not claimed as digests of these published metadata or re-rendered report files. Predictions, inputs, model settings, and numeric results are unchanged. Current published hashes are recorded in provenance/repository_copy_manifest.json and provenance/research_export_validation.json.",
+  "source_artifact_sha256": "14eff13634426f74006782e71a961de68e62026f8d8533f551712d671f086dcf"
+}

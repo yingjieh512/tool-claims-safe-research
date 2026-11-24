@@ -1,0 +1,365 @@
+{
+  "status": "passed",
+  "all_passed": true,
+  "tolerance_absolute_probability": 0.0001,
+  "selected_ids": [
+    "1",
+    "365",
+    "366",
+    "354"
+  ],
+  "reference_prefix": {
+    "bytes": 393844,
+    "rows": 371,
+    "sha256": "20c8835bf50adb662fade2426c02f401a0a28fc62458b0df6123344e3a051e96",
+    "valid": 366,
+    "historical_failures": 5
+  },
+  "nearest_selection": {
+    "rule": "minimum abs(p_unsafe - 0.5), then lexical ID; initial valid prefix only",
+    "excluded_ids": [
+      "1",
+      "365",
+      "366"
+    ],
+    "candidate_count": 363,
+    "id": "354",
+    "distance_to_threshold": 0.00010514259338378906
+  },
+  "runtime": {
+    "implementation": "query_chunked_cpu_float32_math_sdpa",
+    "chunk_size": 256,
+    "threshold": 0,
+    "full_key_value_context": true,
+    "truncation": false,
+    "device": "cpu",
+    "dtype": "float32",
+    "torch_threads": 4,
+    "all_tokens": true,
+    "source_sha256": {
+      "serve.py": "e3e2f70c44f6c14bfbbdbdefbaf4414e0a8d75a770c749901ebbaac25574ca11",
+      "jev_inference.py": "b03d650506926feff6a90e985f9480e0f62a1c18b9514d022fb2c032f3c54b3c",
+      "bounded_sdpa.py": "5aa992f4a5b7ebe8daacc03661870345d9b6ae8dbcab84b2f33fc159ae2c874f",
+      "serve_bounded.py": "36493dfe7592275a831d6da1160c0d9c4cf7aacc7ac0e7a3f880ce73921318eb"
+    }
+  },
+  "cases": [
+    {
+      "id": "1",
+      "input_sha256": "d5822b6151ea17e7adbee3df5e1fec987029824a6d25c3bf56f11f3e2e434132",
+      "reference_recorded_at_utc": "2026-11-16T22:58:27.201715+00:00",
+      "reference_parsed": {
+        "prediction": 0,
+        "unsafe_probability": 0.01344319712370634,
+        "prompt_tokens": 1339,
+        "output_tokens": null
+      },
+      "bounded_parsed": {
+        "prediction": 0,
+        "unsafe_probability": 0.013443184085190296,
+        "prompt_tokens": 1339,
+        "output_tokens": null
+      },
+      "reference_safety_probs": {
+        "unsafe": 0.01344319712370634,
+        "safe": 0.9865568280220032
+      },
+      "bounded_safety_probs": {
+        "unsafe": 0.013443184085190296,
+        "safe": 0.9865568280220032
+      },
+      "reference_raw_response": {
+        "model": "jev-v3.2-2b",
+        "mode": "single",
+        "probabilities": {},
+        "categories": [],
+        "safety": "safe",
+        "safety_probs": {
+          "unsafe": 0.01344319712370634,
+          "safe": 0.9865568280220032
+        },
+        "score": null,
+        "prompt_tokens": 1339,
+        "truncated": false,
+        "latency_ms": 57860.0
+      },
+      "bounded_raw_response": {
+        "model": "jev-v3.2-2b",
+        "mode": "single",
+        "probabilities": {},
+        "categories": [],
+        "safety": "safe",
+        "safety_probs": {
+          "unsafe": 0.013443184085190296,
+          "safe": 0.9865568280220032
+        },
+        "score": null,
+        "prompt_tokens": 1339,
+        "truncated": false,
+        "latency_ms": 36235.0,
+        "guard_runtime": {
+          "implementation": "query_chunked_cpu_float32_math_sdpa",
+          "chunk_size": 256,
+          "threshold": 0,
+          "full_key_value_context": true,
+          "truncation": false,
+          "device": "cpu",
+          "dtype": "float32",
+          "torch_threads": 4,
+          "all_tokens": true,
+          "source_sha256": {
+            "serve.py": "e3e2f70c44f6c14bfbbdbdefbaf4414e0a8d75a770c749901ebbaac25574ca11",
+            "jev_inference.py": "b03d650506926feff6a90e985f9480e0f62a1c18b9514d022fb2c032f3c54b3c",
+            "bounded_sdpa.py": "5aa992f4a5b7ebe8daacc03661870345d9b6ae8dbcab84b2f33fc159ae2c874f",
+            "serve_bounded.py": "36493dfe7592275a831d6da1160c0d9c4cf7aacc7ac0e7a3f880ce73921318eb"
+          }
+        }
+      },
+      "max_absolute_probability_error": 1.30385160446167e-08,
+      "same_label": true,
+      "same_tokens": true,
+      "parsed_nonprobability_fields_equal": true,
+      "raw_nonprobability_semantics_equal": true,
+      "exact": false,
+      "passed": true
+    },
+    {
+      "id": "365",
+      "input_sha256": "d99902660b01217b482bab816e025ef3db6f6702f9d58b7b53f31a5116b08816",
+      "reference_recorded_at_utc": "2026-11-17T01:39:32.146513+00:00",
+      "reference_parsed": {
+        "prediction": 0,
+        "unsafe_probability": 0.1685606986284256,
+        "prompt_tokens": 3724,
+        "output_tokens": null
+      },
+      "bounded_parsed": {
+        "prediction": 0,
+        "unsafe_probability": 0.1685599833726883,
+        "prompt_tokens": 3724,
+        "output_tokens": null
+      },
+      "reference_safety_probs": {
+        "unsafe": 0.1685606986284256,
+        "safe": 0.8314393162727356
+      },
+      "bounded_safety_probs": {
+        "unsafe": 0.1685599833726883,
+        "safe": 0.8314400315284729
+      },
+      "reference_raw_response": {
+        "model": "jev-v3.2-2b",
+        "mode": "single",
+        "probabilities": {},
+        "categories": [],
+        "safety": "safe",
+        "safety_probs": {
+          "unsafe": 0.1685606986284256,
+          "safe": 0.8314393162727356
+        },
+        "score": null,
+        "prompt_tokens": 3724,
+        "truncated": false,
+        "latency_ms": 42375.0
+      },
+      "bounded_raw_response": {
+        "model": "jev-v3.2-2b",
+        "mode": "single",
+        "probabilities": {},
+        "categories": [],
+        "safety": "safe",
+        "safety_probs": {
+          "unsafe": 0.1685599833726883,
+          "safe": 0.8314400315284729
+        },
+        "score": null,
+        "prompt_tokens": 3724,
+        "truncated": false,
+        "latency_ms": 46422.0,
+        "guard_runtime": {
+          "implementation": "query_chunked_cpu_float32_math_sdpa",
+          "chunk_size": 256,
+          "threshold": 0,
+          "full_key_value_context": true,
+          "truncation": false,
+          "device": "cpu",
+          "dtype": "float32",
+          "torch_threads": 4,
+          "all_tokens": true,
+          "source_sha256": {
+            "serve.py": "e3e2f70c44f6c14bfbbdbdefbaf4414e0a8d75a770c749901ebbaac25574ca11",
+            "jev_inference.py": "b03d650506926feff6a90e985f9480e0f62a1c18b9514d022fb2c032f3c54b3c",
+            "bounded_sdpa.py": "5aa992f4a5b7ebe8daacc03661870345d9b6ae8dbcab84b2f33fc159ae2c874f",
+            "serve_bounded.py": "36493dfe7592275a831d6da1160c0d9c4cf7aacc7ac0e7a3f880ce73921318eb"
+          }
+        }
+      },
+      "max_absolute_probability_error": 7.152557373046875e-07,
+      "same_label": true,
+      "same_tokens": true,
+      "parsed_nonprobability_fields_equal": true,
+      "raw_nonprobability_semantics_equal": true,
+      "exact": false,
+      "passed": true
+    },
+    {
+      "id": "366",
+      "input_sha256": "e8d8bfdf3832775ea08f08dcb5eaf112d4cfb5acf8c676860170db4b4aebc017",
+      "reference_recorded_at_utc": "2026-11-17T01:59:27.904179+00:00",
+      "reference_parsed": {
+        "prediction": 1,
+        "unsafe_probability": 0.7049713730812073,
+        "prompt_tokens": 8463,
+        "output_tokens": null
+      },
+      "bounded_parsed": {
+        "prediction": 1,
+        "unsafe_probability": 0.7049697637557983,
+        "prompt_tokens": 8463,
+        "output_tokens": null
+      },
+      "reference_safety_probs": {
+        "unsafe": 0.7049713730812073,
+        "safe": 0.2950286269187927
+      },
+      "bounded_safety_probs": {
+        "unsafe": 0.7049697637557983,
+        "safe": 0.2950302064418793
+      },
+      "reference_raw_response": {
+        "model": "jev-v3.2-2b",
+        "mode": "single",
+        "probabilities": {},
+        "categories": [],
+        "safety": "unsafe",
+        "safety_probs": {
+          "unsafe": 0.7049713730812073,
+          "safe": 0.2950286269187927
+        },
+        "score": null,
+        "prompt_tokens": 8463,
+        "truncated": false,
+        "latency_ms": 383953.0
+      },
+      "bounded_raw_response": {
+        "model": "jev-v3.2-2b",
+        "mode": "single",
+        "probabilities": {},
+        "categories": [],
+        "safety": "unsafe",
+        "safety_probs": {
+          "unsafe": 0.7049697637557983,
+          "safe": 0.2950302064418793
+        },
+        "score": null,
+        "prompt_tokens": 8463,
+        "truncated": false,
+        "latency_ms": 113813.0,
+        "guard_runtime": {
+          "implementation": "query_chunked_cpu_float32_math_sdpa",
+          "chunk_size": 256,
+          "threshold": 0,
+          "full_key_value_context": true,
+          "truncation": false,
+          "device": "cpu",
+          "dtype": "float32",
+          "torch_threads": 4,
+          "all_tokens": true,
+          "source_sha256": {
+            "serve.py": "e3e2f70c44f6c14bfbbdbdefbaf4414e0a8d75a770c749901ebbaac25574ca11",
+            "jev_inference.py": "b03d650506926feff6a90e985f9480e0f62a1c18b9514d022fb2c032f3c54b3c",
+            "bounded_sdpa.py": "5aa992f4a5b7ebe8daacc03661870345d9b6ae8dbcab84b2f33fc159ae2c874f",
+            "serve_bounded.py": "36493dfe7592275a831d6da1160c0d9c4cf7aacc7ac0e7a3f880ce73921318eb"
+          }
+        }
+      },
+      "max_absolute_probability_error": 1.6093254089355469e-06,
+      "same_label": true,
+      "same_tokens": true,
+      "parsed_nonprobability_fields_equal": true,
+      "raw_nonprobability_semantics_equal": true,
+      "exact": false,
+      "passed": true
+    },
+    {
+      "id": "354",
+      "input_sha256": "2548d0870a5e2a874d747229b8b6792307142c582b716bdc89d919da89c3381c",
+      "reference_recorded_at_utc": "2026-11-17T01:34:20.418187+00:00",
+      "reference_parsed": {
+        "prediction": 1,
+        "unsafe_probability": 0.5001051425933838,
+        "prompt_tokens": 1497,
+        "output_tokens": null
+      },
+      "bounded_parsed": {
+        "prediction": 1,
+        "unsafe_probability": 0.5001051425933838,
+        "prompt_tokens": 1497,
+        "output_tokens": null
+      },
+      "reference_safety_probs": {
+        "unsafe": 0.5001051425933838,
+        "safe": 0.49989479780197144
+      },
+      "bounded_safety_probs": {
+        "unsafe": 0.5001051425933838,
+        "safe": 0.49989479780197144
+      },
+      "reference_raw_response": {
+        "model": "jev-v3.2-2b",
+        "mode": "single",
+        "probabilities": {},
+        "categories": [],
+        "safety": "unsafe",
+        "safety_probs": {
+          "unsafe": 0.5001051425933838,
+          "safe": 0.49989479780197144
+        },
+        "score": null,
+        "prompt_tokens": 1497,
+        "truncated": false,
+        "latency_ms": 16718.0
+      },
+      "bounded_raw_response": {
+        "model": "jev-v3.2-2b",
+        "mode": "single",
+        "probabilities": {},
+        "categories": [],
+        "safety": "unsafe",
+        "safety_probs": {
+          "unsafe": 0.5001051425933838,
+          "safe": 0.49989479780197144
+        },
+        "score": null,
+        "prompt_tokens": 1497,
+        "truncated": false,
+        "latency_ms": 16969.0,
+        "guard_runtime": {
+          "implementation": "query_chunked_cpu_float32_math_sdpa",
+          "chunk_size": 256,
+          "threshold": 0,
+          "full_key_value_context": true,
+          "truncation": false,
+          "device": "cpu",
+          "dtype": "float32",
+          "torch_threads": 4,
+          "all_tokens": true,
+          "source_sha256": {
+            "serve.py": "e3e2f70c44f6c14bfbbdbdefbaf4414e0a8d75a770c749901ebbaac25574ca11",
+            "jev_inference.py": "b03d650506926feff6a90e985f9480e0f62a1c18b9514d022fb2c032f3c54b3c",
+            "bounded_sdpa.py": "5aa992f4a5b7ebe8daacc03661870345d9b6ae8dbcab84b2f33fc159ae2c874f",
+            "serve_bounded.py": "36493dfe7592275a831d6da1160c0d9c4cf7aacc7ac0e7a3f880ce73921318eb"
+          }
+        }
+      },
+      "max_absolute_probability_error": 0.0,
+      "same_label": true,
+      "same_tokens": true,
+      "parsed_nonprobability_fields_equal": true,
+      "raw_nonprobability_semantics_equal": true,
+      "exact": true,
+      "passed": true
+    }
+  ],
+  "max_absolute_probability_error": 1.6093254089355469e-06
+}
